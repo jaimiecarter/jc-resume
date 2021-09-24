@@ -1,0 +1,22 @@
+<h2>{{@title}}</h2>
+
+  <div style="padding-bottom: 20%;">
+    {{#each @jobs as |job|}}
+      <h3 style="font-weight:195;">{{job.period}}</h3>
+      <h4 style="text-indent: 2%; font-weight: 160;">{{job.position}}</h4>
+      <ul>
+      {{#each job.items as |item|}}
+        <li>
+          <h4 style="text-indent: 2%; font-weight: 160;">{{item.title}}</h4>
+          {{#each item.array as |line|}}
+          <ul>
+            <li>
+              {{line}}
+            </li>
+          </ul>
+          {{/each}}
+        </li>
+      {{/each}}
+      </ul>
+    {{/each}}
+  </div>

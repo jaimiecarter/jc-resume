@@ -1,0 +1,15 @@
+{{page-title "Projects"}}
+<h2>Projects</h2>
+<div style="padding-bottom: 20%;">
+  {{#each @model as |project|}}
+    <h4>{{project.title}}</h4>
+    {{#each project.links as |link|}}
+      <a href="{{link}}">{{link}}</a><br>
+    {{/each}}
+    {{#each project.array as |line|}}
+      <ul>
+        <li>{{line}}</li>
+      </ul>
+    {{/each}}
+  {{/each}}
+</div>

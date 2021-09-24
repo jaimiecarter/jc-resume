@@ -1,7 +1,12 @@
-{{page-title "JcResume"}}
-
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+{{page-title "JC Resume"}}
+<div style="text-align: center;">
+  <h1>Resume</h1>
+  <h2>Jaimie Carter</h2>
+</div>
+<div style="padding-inline: 20%;">
+  <a href="/experience" style="text-indent: 2%; font-weight: 160; padding-right: 1.5%;">Experience</a>
+  <a href="/education" style="text-indent: 2%; font-weight: 160; padding-right: 1.5%;">Education</a>
+  <a href="/technology" style="text-indent: 2%; font-weight: 160; padding-right: 1.5%;">Technology</a>
+  <a href="/projects" style="text-indent: 2%; font-weight: 160; padding-right: 1.5%;">Projects</a>
+  {{outlet}}
+</div>

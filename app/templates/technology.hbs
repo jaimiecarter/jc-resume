@@ -1,0 +1,12 @@
+{{page-title "Technology"}}
+<h2>Technology</h2>
+<div style="padding-bottom: 20%;">
+  {{#each @model as |item|}}
+    <h4>{{item.title}}</h4>
+    {{#each item.array as |line|}}
+      <ul>
+        <li>{{line}}</li>
+      </ul>
+    {{/each}}
+  {{/each}}
+</div>
